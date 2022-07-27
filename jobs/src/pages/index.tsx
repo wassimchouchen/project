@@ -1,20 +1,16 @@
-import { Navbar } from '../components/Navbar'
 import { Card } from '../components/JobCard'
 
 export default function Home() {
   return (
-    <div className="font-lato bg-light-1">
-      <Navbar />
-      <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
-        <div className="p-4 md:p-10 col-span-4 grid gap-4 grid-cols-1 md:grid-cols-2">
-          {data.map((d, idx) => (
-            <Card key={idx} {...d} />
-          ))}
-        </div>
-        <div className="hidden xl:block p-10">
-          <div className="text-white bg-dark-2 p-4 rounded-md ">
-            I honstly don&#39;t know what to put here
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5">
+      <div className="p-4 md:p-10 col-span-4 grid gap-4 grid-cols-1 md:grid-cols-2">
+        {data.map((d, idx) => (
+          <Card key={idx} {...d} />
+        ))}
+      </div>
+      <div className="hidden xl:block p-10">
+        <div className="text-white bg-dark-2 p-4 rounded-md ">
+          I honstly don&#39;t know what to put here
         </div>
       </div>
     </div>

@@ -9,10 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formiz/core": "^1.8.1",
+    "@formiz/validations": "^1.0.0",
+    "@hookform/resolvers": "^2.9.7",
     "next": "12.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.4.0"
+    "react-hook-form": "^7.33.1",
+    "react-icons": "^4.4.0",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/node": "^18.0.6",
